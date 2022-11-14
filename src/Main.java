@@ -77,33 +77,43 @@ public class Main {
 
 
         //task2
-        int childrenGoToSchool = 5;
-        if (childrenGoToSchool >= 7){
-            System.out.println("Ребенок ходит в школу, если его возраст равен или больше 7 лет");
+        int DimaGoToSchool = 7;
+        if (DimaGoToSchool >= 7 && DimaGoToSchool < 18){
+            System.out.println("Дима ходит в школу");
+        }
+        else  if (DimaGoToSchool >= 18 && DimaGoToSchool < 24){
+            System.out.println("Дима окончил школу и может поступить в университет");
+
         }
         else {
-            System.out.println("Ребенок не ходит в школу,так как его возраст меньше 7 лет");
+            System.out.println("Дима окончил университет и может искать первую работу");
             System.out.println(" ");
         }
 
 
 
-        int manGoToUniversity = 15;
-        if (manGoToUniversity >= 18){
-            System.out.println("Человек уже окончил школу и может отправиться в университет,если его возраст равен или больше 18 лет");
+        int SvetaGoToUniversity = 18;
+        if (SvetaGoToUniversity >= 7 && SvetaGoToUniversity >= 18 ){
+            System.out.println("Света ходит в школу");
+        }
+        else if (SvetaGoToUniversity >= 18 && SvetaGoToUniversity <24){
+            System.out.println("Света окончила школу и может поступить в университет");
         }
         else {
-            System.out.println("Человек еще не окончил школу и не может отправиться в университет,его возраст меньше 18 лет");
+            System.out.println("Света окончила университет и может искать первую работу");
         }
 
 
 
-        int manGoToFirstWork = 20;
-        if (manGoToFirstWork >= 24){
-            System.out.println("Человек окончил университет и ему пора искать первую работу, если ему 24 года или больше");
+        int lisaGoToFirstWork = 24;
+        if (lisaGoToFirstWork >= 7 && lisaGoToFirstWork >= 24){
+            System.out.println("Лиза ходит в школу");
+        }
+        else if (lisaGoToFirstWork >= 18 && lisaGoToFirstWork <24){
+            System.out.println("Лиза окончила школу и может поступать в университет");
         }
         else {
-            System.out.println("Человек не может идти искать первую работу, ему не исполнилось 24 лет");
+            System.out.println("Лиза окончила универститет и может устраиваться на первую работу");
             System.out.println(" ");
         }
 
