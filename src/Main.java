@@ -32,6 +32,39 @@ public class Main {
         }
 
 
+        //task3
+        int fullCarrriageTrain = 102;
+        System.out.println("Всего мест в вагоне " + fullCarrriageTrain);
+        if (fullCarrriageTrain < 102);{
+            System.out.println("В вагоне еще есть места");
+
+        }
+        if (fullCarrriageTrain >= 102);{
+            System.out.println("В вагоне нет мест");
+            System.out.println(" ");
+
+        }
+
+        int sitPlace = 60;
+        System.out.println("Сидячих мест в вагоне " + sitPlace);
+        if (sitPlace < 60);{
+            System.out.println("В вагоне еще есть сидячие места");
+        }
+        if (sitPlace >= 60);{
+            System.out.println("Сидячих мест в вагоне нет");
+            System.out.println(" ");
+
+        }
+        int standingPosition = fullCarrriageTrain-sitPlace;
+        System.out.println("Стоячих мест в вагоне " + standingPosition);
+        if (standingPosition < 42);{
+            System.out.println("Стоячие места еще есть в вагоне");
+
+        }
+        if (standingPosition >= 42);{
+            System.out.println("Стоячих мест в вагоне нет");
+
+        }
 
     }
 }
