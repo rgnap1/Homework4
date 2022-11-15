@@ -77,43 +77,33 @@ public class Main {
 
 
         //task2
-        int DimaGoToSchool = 7;
-        if (DimaGoToSchool >= 7 && DimaGoToSchool < 18){
-            System.out.println("Дима ходит в школу");
-        }
-        else  if (DimaGoToSchool >= 18 && DimaGoToSchool < 24){
-            System.out.println("Дима окончил школу и может поступить в университет");
-
+        int dimaGoToSchool = 7;
+        if (dimaGoToSchool >= 7){
+            System.out.println("Дима ходит в школу,если ешл возраст больше или равен 7 годам");
         }
         else {
-            System.out.println("Дима окончил университет и может искать первую работу");
+            System.out.println("Дима не может ходить в школу если его возраст меньше 7 лет");
             System.out.println(" ");
         }
 
 
 
-        int SvetaGoToUniversity = 18;
-        if (SvetaGoToUniversity >= 7 && SvetaGoToUniversity >= 18 ){
-            System.out.println("Света ходит в школу");
-        }
-        else if (SvetaGoToUniversity >= 18 && SvetaGoToUniversity <24){
-            System.out.println("Света окончила школу и может поступить в университет");
+        int dimaGoToUniversity = 18;
+        if (dimaGoToUniversity >= 18){
+            System.out.println("Дима ходит в университет,если его возраст больше или равен 18 годам");
         }
         else {
-            System.out.println("Света окончила университет и может искать первую работу");
+            System.out.println("Дима не может учиться в университете,если его возраст меньше 18");
         }
 
 
 
-        int lisaGoToFirstWork = 24;
-        if (lisaGoToFirstWork >= 7 && lisaGoToFirstWork >= 24){
-            System.out.println("Лиза ходит в школу");
-        }
-        else if (lisaGoToFirstWork >= 18 && lisaGoToFirstWork <24){
-            System.out.println("Лиза окончила школу и может поступать в университет");
+        int dimaGoToFirstWork = 24;
+        if ( dimaGoToFirstWork >= 24){
+            System.out.println("Дима может искать свою первую работу,если его возраст больше или равен 24 годам");
         }
         else {
-            System.out.println("Лиза окончила универститет и может устраиваться на первую работу");
+            System.out.println("Дима не может искать первую работу,ему нет 24 лет");
             System.out.println(" ");
         }
 
@@ -147,6 +137,31 @@ public class Main {
             System.out.println("В стоячем вагоне не осталось мест");
             System.out.println(" ");
         }
+
+         //Homework4.3
+        //task1
+        int ageMan1 = 21;
+        boolean manGoTo = ageMan1 >=2 && ageMan1<6 || ageMan1 >=7 && ageMan1 <18 ||ageMan1 >=18 && ageMan1<=24 || ageMan1>24;
+
+        if (ageMan1 >=2 && ageMan1<6){
+            System.out.println("Если возраст человека равен " + ageMan1 + " лет,то ему нужно ходить в детский сад");
+        }
+
+        else if (ageMan1 >=7 && ageMan1 <18){
+            System.out.println("Если возраст человека равен " + ageMan1 + " лет,то ему нужно ходить в школу");
+        }
+
+        else  if (ageMan1 >=18 && ageMan1<=24){
+            System.out.println("Если возраст человека равен " + ageMan1 + " лет, то ему нужно ходить в университет");
+        }
+
+        else  if (ageMan1>24){
+            System.out.println("Если возраст человека равен " + ageMan1 + " лет, то ему нужно ходить на работу");
+        }
+
+
+
+
 
 
 
