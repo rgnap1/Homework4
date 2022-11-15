@@ -160,10 +160,33 @@ public class Main {
         }
 
 
+        //task2
+        int ageChildren1 = 13;
+        boolean ageChildrenGoToAttraction = ageChildren1<5 || ageChildren1>5 && ageChildren1<14 || ageChildren1>14;
+        if (ageChildren1<5){
+            System.out.println("Кататься на аттракционе нельзя");
+        }
+        else if (ageChildren1>5 && ageChildren1<14){
+            System.out.println("Можно кататься только в сопровождении взрослого. Если взрослого нет,то кататься нельзя");
+        }
+        else if (ageChildren1>14){
+            System.out.println("Можно кататься без сопровождения взрослого");
+        }
 
-
-
-
+        //task3
+        int one = 1;
+        int two = 2;
+        int free = 10;
+        boolean bigNumber = one<two && one<free||two>one && two<free||free>one && free>two;
+        if (one>two && one>free){
+            System.out.println("one");
+        }
+        else if (two>one && two>free){
+            System.out.println("two");
+        }
+        else if (free>one && free>two){
+            System.out.println("free");
+        }
 
 
 
