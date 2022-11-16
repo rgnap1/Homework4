@@ -69,10 +69,10 @@ public class Main {
         }
          else {
             System.out.println("Вам еще не исполнилось 18,подождите еще немного!");
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println("//task2 ");
         }
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("//task2 ");
 
 
 
@@ -100,20 +100,22 @@ public class Main {
 
         int fullCarrriageTrain2 = 102;
         //System.out.println("Всего мест в вагоне " + fullCarrriageTrain2);
-        int fullSitPosition = 60;
+        int fullSitPosition2 = 60;
         //System.out.println("Всего мест в сидячем вагоне " + sitPosition);
-        int fullStandingPosition = fullCarrriageTrain2 - fullSitPosition;
-        //System.out.println("Всего мест в стоячем вагоне" + standingPosition2);
-        int sitPosition = 60;
-        int standPosition = 15;
-        if (sitPosition >= 60 && standPosition >= 42){
-            System.out.println("Мест в вагоне нет");
+        int fullStandingPosition2 = fullCarrriageTrain - fullSitPosition2;
+        //System.out.println("Всего мест в стоячем вагоне" + fullStandingPosition2);
+        int sitPosition2 = 13;
+        int standPosition2 = 15;
+        if (sitPosition2>=60 && standPosition2 >= fullStandingPosition2){
+            System.out.println(" Мест в вагоне нет");
         }
-        else if (sitPosition < 60 ){
-            System.out.println("В сидячем вагоне остались места");
-        }
-        else if (standPosition < 42){
-            System.out.println("В стоячем вагоне остались места");
+        else {
+            if (sitPosition2 < 60){
+                System.out.println("В вагоне есть сидячие места");
+            }
+            if (standPosition2 < fullStandingPosition2 ){
+                System.out.println("В вагоне есть стоячие места");
+            }
         }
 
         System.out.println(" ");
@@ -173,6 +175,21 @@ public class Main {
         else if (free>one && free>two){
             System.out.println("free");
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
