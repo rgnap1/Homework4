@@ -139,10 +139,10 @@ public class Main {
 
         else  if (ageMan1>24){
             System.out.println("Если возраст человека равен " + ageMan1 + " лет, то ему нужно ходить на работу");
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println("//task2 ");
         }
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("//task2 ");
 
 
         //task2
@@ -155,11 +155,10 @@ public class Main {
         }
         else if (ageChildren1>14){
             System.out.println("Можно кататься без сопровождения взрослого");
-            System.out.println(" ");
-            System.out.println(" ");
-            System.out.println("//task3");
-
         }
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("//task3");
 
         //task3
         int one = 1;
